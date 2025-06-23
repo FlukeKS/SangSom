@@ -77,15 +77,8 @@
 	<!-- New Arrivals section start -->
 	<div class="collection_text">Cart</div>
 	<div class="collection_section layout_padding">
-		<div class="container">
-			<h1 class="new_text"><strong>New Arrivals Products</strong></h1>
-			<p class="consectetur_text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-		</div>
-	</div>
-	<div class="layout_padding gallery_section">
 		<div class="container mt-5">
-			<h2 class="mb-4">🛒 ตะกร้าสินค้า</h2>
+			<h2 class="mb-4">🛒 <strong>My Cart</strong></h2>
 			<div id="cart-container"></div>
 			<div id="total-price" class="cart-total"></div>
 			</div>
@@ -228,7 +221,7 @@
 		let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 		if (cart.length === 0) {
-			cartContainer.innerHTML = `<p class="text-muted">ยังไม่มีสินค้าในตะกร้า</p>`;
+			cartContainer.innerHTML = `<p class="text-muted">Not have any product</p>`;
 			totalPriceContainer.innerText = '';
 		} else {
 			let total = 0;
@@ -243,10 +236,10 @@
 					</div>
 					<div class="col-md-6">
 					  <h5>${item.name}</h5>
-					  <p class="text-muted">ราคา: $${item.price}</p>
+					  <p class="text-muted">Color: ${item.color} | Size: ${item.size}</p>
 					</div>
 					<div class="col-md-4 text-right">
-					  <button class="btn btn-danger" onclick="removeItem(${index})">ลบสินค้า</button>
+					  <button class="btn btn-danger" onclick="removeItem(${index})">Delete</button>
 					</div>
 				  </div>
 				`;
@@ -254,7 +247,7 @@
 				cartContainer.innerHTML += itemHTML;
 			});
 
-			totalPriceContainer.innerText = `ราคารวมทั้งหมด: $${total.toFixed(2)}`;
+			totalPriceContainer.innerText = `Total Price: $${total.toFixed(2)}`;
 		}
 
 		function removeItem(index) {
