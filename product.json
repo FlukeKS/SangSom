@@ -4,43 +4,197 @@
       "name": "Nike Air Jordan 1 High",
       "image_url": "imagesOrder/SNEAKER/Jordan H/Jordan1 H Chicago.png",
       "rating": 5,
-      "price": 60
+      "price": 180,
+      "colors": [
+        {
+          "color": "Chicago",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Chicago.png"
+          ]
+        },
+        {
+          "color": "Black",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Black.png",
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Black Front.png"
+          ]
+        },
+        {
+          "color": "Laker",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Laker.png"
+          ]
+        }
+         
+      ]
     },
     {
       "name": "Nike Air Jordan 1 Low",
       "image_url": "imagesOrder/SNEAKER/Jordan L/Nike panda.png",
       "rating": 5,
-      "price": 400
+      "price": 120,
+      "colors": [
+        {
+          "color": "Chicago",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Chicago Front.png"
+          ]
+        },
+        {
+          "color": "Black",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Black.png",
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Black Front.png"
+          ]
+        },
+        {
+          "color": "Laker",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Laker.png"
+          ]
+        }
+         
+      ]
     },
     {
       "name": "Adidas Samba",
       "image_url": "imagesOrder/SNEAKER/Samba/Adidas samba.png",
       "rating": 5,
-      "price": 50
+      "price": 105,
+      "colors": [
+        {
+          "color": "Chicago",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Chicago Front.png"
+          ]
+        },
+        {
+          "color": "Black",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Black.png",
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Black Front.png"
+          ]
+        },
+        {
+          "color": "Laker",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Laker.png"
+          ]
+        }
+         
+      ]
     },
     {
       "name": "Adidas Gazelle",
       "image_url": "imagesOrder/SNEAKER/Gazzelle/Gazelle Black.png",
       "rating": 5,
-      "price": 70
+      "price": 120,
+      "colors": [
+        {
+          "color": "Chicago",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Chicago Front.png"
+          ]
+        },
+        {
+          "color": "Black",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Black.png",
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Black Front.png"
+          ]
+        },
+        {
+          "color": "Laker",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Laker.png"
+          ]
+        }
+         
+      ]
     },
     {
       "name": "Puma Speedcat",
       "image_url": "imagesOrder/SNEAKER/Speedcat/Puma speedcat.png",
       "rating": 5,
-      "price": 100
+      "price": 120,
+      "colors": [
+        {
+          "color": "Chicago",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Chicago Front.png"
+          ]
+        },
+        {
+          "color": "Black",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Black.png",
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Black Front.png"
+          ]
+        },
+        {
+          "color": "Laker",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Laker.png"
+          ]
+        }
+         
+      ]
     },
     {
       "name": "New Balance 530",
       "image_url": "imagesOrder/SNEAKER/NewB 530.png",
       "rating": 5,
-      "price": 90
+      "price": 95,
+      "colors": [
+        {
+          "color": "Chicago",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Chicago Front.png"
+          ]
+        },
+        {
+          "color": "Black",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Black.png",
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Black Front.png"
+          ]
+        },
+        {
+          "color": "Laker",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Laker.png"
+          ]
+        }
+         
+      ]
     },
     {
       "name": "New Balance 574",
       "image_url": "imagesOrder/SNEAKER/NewB 574.png",
       "rating": 5,
-      "price": 90
+      "price": 95,
+      "colors": [
+        {
+          "color": "Chicago",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Chicago Front.png"
+          ]
+        },
+        {
+          "color": "Black",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Black.png",
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Black Front.png"
+          ]
+        },
+        {
+          "color": "Laker",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan H/Jordan1 H Laker.png"
+          ]
+        }
+         
+      ]
     }
   ]
 }
