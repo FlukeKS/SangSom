@@ -146,6 +146,7 @@ a,
   transition: all 0.3s ease-in-out;
 }
 
+
 .logo img  {
     max-width: 25%;
     height: auto;
@@ -924,4 +925,18 @@ a:hover {
 
 .card-title {
   font-size: 1.2rem;
+}
+.cart-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.cart-item img {
+  max-width: 100px;
+}
+
+.cart-total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
 }
