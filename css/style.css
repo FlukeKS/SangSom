@@ -31,13 +31,13 @@ html {
 }
 
 body {
-  color: #666666;
+  color: #eae7e7;
   font-size: 14px;
   font-family: Poppins;
   line-height: 1.80857;
   font-weight: normal;
   overflow-x: hidden;
-  background-color: #ede8f5;
+  background-color: #ffffff;
 }
 
 a {
@@ -223,7 +223,7 @@ button {
   padding: 20px 0px;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-color: #7091e6; /* โปร่งใส */
+  background-color: #121212; /* โปร่งใส */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* เพิ่มเงาด้านล่าง */
 }
 
@@ -284,9 +284,11 @@ button {
 }
 .banner_text {
   width: 100%;
-  float: left;
-  font-size: 30pt;
-  color: #fe0000;
+	float: left;
+	font-size: 20pt;
+	color: #191919;
+  font: bold;
+  -webkit-text-stroke: 1px #ffffff;
 }
 
 .mens_text {
@@ -294,7 +296,7 @@ button {
   float: left;
   font-size: 39pt;
   color: #fdfcfc;
-  line-height: 40px;
+  line-height: 50px;
 }
 .lorem_text {
   width: 100%;
@@ -308,17 +310,32 @@ button {
   width: 32%;
   height: 50px;
   color: #ffffff;
-  background-color: #ff4e5b;
-  color: #ffffff;
+  background-color: #FF3B3B;
+  font-size: 16pt;
+}
+.buy_bt:hover {
+  width: 32%;
+  height: 50px;
+  color: #FF3B3B;
+  background-color: #121212;
+  border: 1px solid #ffffff;
   font-size: 16pt;
 }
 
 .more_bt {
   width: 32%;
   height: 50px;
-  color: #ffffff;
+  color: #FF3B3B;
   background-color: #ffffff;
-  color: #ff4e5b;
+  font-size: 16pt;
+  margin-left: 25px;
+}
+.more_bt:hover {
+  width: 32%;
+  height: 50px;
+  color: #ffffff;
+  background-color: #121212;
+  border: 1px solid #FF3B3B;
   font-size: 16pt;
   margin-left: 25px;
 }
@@ -527,8 +544,17 @@ body {
   width: 32%;
   height: 50px;
   color: #ffffff;
-  background-color: #ff4e5b;
+  background-color: #ff3b3b;
+  font-size: 16pt;
+  margin-top: 35px;
+  margin-bottom: 90px;
+}
+.seemore_bt:hover {
+  width: 32%;
+  height: 50px;
   color: #ffffff;
+  background-color: #121212;
+  border: 2px solid #FF3B3B;
   font-size: 16pt;
   margin-top: 35px;
   margin-bottom: 90px;
@@ -585,8 +611,16 @@ body {
   width: 50%;
   height: 50px;
   color: #ffffff;
-  background-color: #ff4e5b;
+  background-color: #FF3B3B;
+  font-size: 16pt;
+  margin-top: 35px;
+}
+.seemore:hover {
+  width: 50%;
+  height: 50px;
   color: #ffffff;
+  background-color: #121212;
+  border: 2px solid #FF3B3B;
   font-size: 16pt;
   margin-top: 35px;
 }
@@ -594,7 +628,7 @@ body {
 .gallery_section {
   width: 100%;
   float: left;
-  background-color: #ff4e5b;
+  background-color: #eae7e7;
   height: auto;
 }
 
@@ -710,7 +744,7 @@ body {
   text-align: center;
 }
 .main_bt {
-  background: #ff4e5b;
+  background: #ff3b3b;
   border: none;
   width: 170px;
   height: 58px;
@@ -753,7 +787,7 @@ a:hover {
 .section_footer {
   width: 100%;
   float: left;
-  background-color: #272222;
+  background-color: #121212;
   height: auto;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -823,7 +857,7 @@ a:hover {
   color: #ffffff;
   text-align: center;
   padding: 10px 0px;
-  background-color: #ff4e5b;
+  background-color: #ff3b3b;
   font-family: Poppins;
 }
 
@@ -857,7 +891,7 @@ a:hover {
 .subscribr_bt {
   width: 80%;
   float: right;
-  background-color: #ff4e5b;
+  background-color: #ff3b3b;
   font-size: 13pt;
   height: 50px;
   color: #ffffff;
