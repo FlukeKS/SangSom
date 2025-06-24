@@ -709,12 +709,13 @@ body {
   float: left;
 }
 .email_box {
-  width: 85%;
+  width: 100%;
   float: right;
   background-color: #14120e;
   height: auto;
   padding: 20px 20px;
   opacity: 0.8;
+
 }
 .form-group {
   margin-bottom: 2rem;
@@ -758,14 +759,6 @@ body {
 
 a:hover {
   color: #fff;
-}
-
-.shop_banner {
-  width: 100%;
-  float: left;
-  background-image: url(../images/shop-banner.png);
-  height: auto;
-  padding: 70px;
 }
 
 .our_shop {
@@ -981,3 +974,10 @@ a:hover {
 .thumb-img:hover {
   border: 2px solid #28a745;
 }
+
+.col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        justify-items: center;
+    }
