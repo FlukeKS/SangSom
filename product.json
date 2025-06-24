@@ -75,7 +75,9 @@
         {
           "color": "Cloud White Core Black",
           "images": [
-            "imagesOrder/SNEAKER/Samba/Adidas samba.png"
+            "imagesOrder/SNEAKER/Samba/Adidas samba.png",
+            "imagesOrder/SNEAKER/Samba/Adidas samba side.jpg",
+            "imagesOrder/SNEAKER/Samba/Adidas samba front.jpg"
           ]
         },
         {
