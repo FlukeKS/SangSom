@@ -147,9 +147,9 @@ a,
 }
 
 
-.logo img  {
-    max-width: 25%;
-    height: auto;
+.logo img {
+  max-width: 25%;
+  height: auto;
 }
 
 img {
@@ -223,8 +223,10 @@ button {
   padding: 20px 0px;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-color: #121212; /* โปร่งใส */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* เพิ่มเงาด้านล่าง */
+  background-color: #121212;
+  /* โปร่งใส */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  /* เพิ่มเงาด้านล่าง */
 }
 
 .padding_0 {
@@ -238,6 +240,7 @@ button {
   color: rgb(0, 0, 0);
   font-size: 14pt;
 }
+
 .mens_taital_2 {
   width: 100%;
   float: left;
@@ -245,6 +248,7 @@ button {
   font-size: 14pt;
   margin-top: 150px;
 }
+
 .page_no {
   width: 28%;
   /* margin: 0 auto; */
@@ -258,6 +262,7 @@ button {
   padding-top: 12px;
   margin-left: 30px;
 }
+
 .bg-light {
   background-color: transparent !important;
 }
@@ -274,6 +279,7 @@ button {
   border-bottom: 2px solid #db5660;
   padding-bottom: 5px;
 }
+
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 0.9rem;
   padding-left: 1.6rem;
@@ -282,11 +288,12 @@ button {
 .last {
   padding-left: 30px !important;
 }
+
 .banner_text {
   width: 100%;
-	float: left;
-	font-size: 20pt;
-	color: #191919;
+  float: left;
+  font-size: 20pt;
+  color: #191919;
   font: bold;
   -webkit-text-stroke: 1px #ffffff;
 }
@@ -298,6 +305,7 @@ button {
   color: #fdfcfc;
   line-height: 50px;
 }
+
 .lorem_text {
   width: 100%;
   float: left;
@@ -313,6 +321,7 @@ button {
   background-color: #FF3B3B;
   font-size: 16pt;
 }
+
 .buy_bt:hover {
   width: 32%;
   height: 50px;
@@ -330,6 +339,7 @@ button {
   font-size: 16pt;
   margin-left: 25px;
 }
+
 .more_bt:hover {
   width: 32%;
   height: 50px;
@@ -350,6 +360,7 @@ body {
   width: 100%;
   height: 100%;
 }
+
 .carousel-inner,
 .carousel,
 .carousel-item,
@@ -360,17 +371,19 @@ body {
   background-position: center center;
   background-size: cover;
 }
+
 .slide-wrapper {
   display: inline;
 }
+
 .slide-wrapper .container {
   padding: 0;
 }
 
 /*------------------------------ vertical bootstrap slider----------------------------*/
 
-.carousel-inner > .carousel-item.carousel-item-next,
-.carousel-inner > .carousel-item.active.carousel-item-right {
+.carousel-inner>.carousel-item.carousel-item-next,
+.carousel-inner>.carousel-item.active.carousel-item-right {
   transform: translate3d(0, 100%, 0);
   -webkit-transform: translate3d(0, 100%, 0);
   -ms-transform: translate3d(0, 100%, 0);
@@ -378,8 +391,9 @@ body {
   -o-transform: translate3d(0, 100%, 0);
   top: 0;
 }
-.carousel-inner > .carousel-item.carousel-item-prev,
-.carousel-inner > .carousel-item.active.carousel-item-left {
+
+.carousel-inner>.carousel-item.carousel-item-prev,
+.carousel-inner>.carousel-item.active.carousel-item-left {
   transform: translate3d(0, -100%, 0);
   -webkit-transform: translate3d(0, -100%, 0);
   -moz-transform: translate3d(0, -100%, 0);
@@ -387,9 +401,10 @@ body {
   -o-transform: translate3d(0, -100%, 0);
   top: 0;
 }
-.carousel-inner > .carousel-item.next.carousel-item-left,
-.carousel-inner > .carousel-item.carousel-item-prev.carousel-item-right,
-.carousel-inner > .carousel-item.active {
+
+.carousel-inner>.carousel-item.next.carousel-item-left,
+.carousel-inner>.carousel-item.carousel-item-prev.carousel-item-right,
+.carousel-inner>.carousel-item.active {
   transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
@@ -414,6 +429,7 @@ body {
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
 }
+
 .carousel-indicators li {
   display: block;
   margin-bottom: 5px;
@@ -431,6 +447,7 @@ body {
   float: left;
   padding-bottom: 0px;
 }
+
 .new_text {
   width: 100%;
   float: left;
@@ -464,6 +481,7 @@ body {
   position: relative;
   z-index: 1;
 }
+
 .new_bt {
   width: 18%;
   float: left;
@@ -493,6 +511,7 @@ body {
   border-bottom: 1px solid#000;
   margin: 0 auto;
 }
+
 .dolar_text {
   width: 100%;
   float: left;
@@ -500,15 +519,18 @@ body {
   color: #000;
   font-size: 20pt;
 }
+
 .star_icon {
   width: 25%;
   margin: 0 auto;
   text-align: center;
 }
+
 .star_icon ul {
   margin: 0px;
   padding: 0px;
 }
+
 .star_icon li {
   float: left;
   padding-right: 10px;
@@ -549,6 +571,7 @@ body {
   margin-top: 35px;
   margin-bottom: 90px;
 }
+
 .seemore_bt:hover {
   width: 32%;
   height: 50px;
@@ -565,6 +588,7 @@ body {
   float: left;
   padding-top: 0px;
 }
+
 .racing_shoes {
   width: 100%;
   float: left;
@@ -574,6 +598,7 @@ body {
   background-size: 100%;
   padding-bottom: 70px;
 }
+
 .shoes-img3 {
   width: 100%;
   float: left;
@@ -615,6 +640,7 @@ body {
   font-size: 16pt;
   margin-top: 35px;
 }
+
 .seemore:hover {
   width: 50%;
   height: 50px;
@@ -650,6 +676,7 @@ body {
   text-align: center;
   margin-left: 0px;
 }
+
 .shoes_icon {
   width: 100%;
   float: left;
@@ -661,25 +688,30 @@ body {
   width: 100%;
   float: left;
 }
+
 .left_part {
   width: 60%;
   float: left;
   padding-left: 15px;
   padding-top: 15px;
 }
+
 .left_part ul {
   margin: 0px;
   padding: 0px;
 }
+
 .left_part li {
   float: left;
   padding-left: 10px;
   padding-bottom: 50px;
 }
+
 .right_part {
   width: 40%;
   float: left;
 }
+
 .shoes_price {
   width: 100%;
   float: left;
@@ -694,6 +726,7 @@ body {
   margin: 0 auto;
   text-align: center;
 }
+
 .buy_text {
   width: 32%;
   height: 50px;
@@ -708,6 +741,7 @@ body {
   width: 100%;
   float: left;
 }
+
 .email_box {
   width: 100%;
   float: right;
@@ -717,6 +751,7 @@ body {
   opacity: 0.8;
 
 }
+
 .form-group {
   margin-bottom: 2rem;
 }
@@ -744,6 +779,7 @@ body {
   margin: 0 auto;
   text-align: center;
 }
+
 .main_bt {
   background: #ff3b3b;
   border: none;
@@ -752,6 +788,7 @@ body {
   font-size: 26px;
   color: #ffffff;
 }
+
 .ram {
   width: 100%;
   float: left;
@@ -767,6 +804,7 @@ a:hover {
   padding-top: 205px;
   padding-bottom: 205px;
 }
+
 .out_shop_bt {
   width: 40%;
   margin: 0 auto;
@@ -790,6 +828,7 @@ a:hover {
   width: 100%;
   float: left;
 }
+
 .footer-logo {
   float: left;
   font-size: 12pt;
@@ -802,17 +841,20 @@ a:hover {
   color: #fdfefe;
   padding-right: 35px;
 }
+
 .footer_section_2 {
   width: 100%;
   float: left;
   padding-top: 20px;
 }
+
 .shop_text {
   width: 100%;
   float: left;
   font-size: 28px;
   color: #ebebeb;
 }
+
 .dummy_text {
   width: 100%;
   float: left;
@@ -822,11 +864,13 @@ a:hover {
   margin-top: 55px;
   line-height: 25px;
 }
+
 .image-icon {
   width: 100%;
   float: left;
   padding-top: 6px;
 }
+
 .pet_text {
   font-size: 12pt;
   color: #ffffff;
@@ -836,6 +880,7 @@ a:hover {
   position: relative;
   padding-left: 20px;
 }
+
 .adderess_text {
   width: 100%;
   float: left;
@@ -857,6 +902,7 @@ a:hover {
 .copyright a {
   color: #ffffff;
 }
+
 .copyright a:hover {
   color: #000;
 }
@@ -901,6 +947,7 @@ a:hover {
   height: auto;
   background: #0c0116;
 }
+
 /*---------------------------------------------------------------------------*/
 
 .text-pink {
@@ -921,6 +968,7 @@ a:hover {
 .register-section .card {
   border-radius: 10px;
 }
+
 .order-page {
   background-color: #fff8fb;
   font-family: "Poppins", sans-serif;
@@ -955,6 +1003,7 @@ a:hover {
 .card-title {
   font-size: 1.2rem;
 }
+
 .cart-item {
   border-bottom: 1px solid #ddd;
   padding: 15px 0;
@@ -973,4 +1022,29 @@ a:hover {
 
 .thumb-img:hover {
   border: 2px solid #28a745;
+}
+
+.card {
+  width: 200px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  font-family: sans-serif;
+}
+
+.product-name {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.trending-badge {
+  display: inline-block;
+  background-color: #e8f0fe;
+  color: #3367d6;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  margin-top: 5px;
 }
