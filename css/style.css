@@ -1050,6 +1050,7 @@ a:hover {
 }
 
 
+/*---Swiper---*/
 .swiper {
   width: 100%;
   padding-top: 20px;
@@ -1069,14 +1070,13 @@ a:hover {
 .swiper-slide {
   background: #fff;
   border-radius: 12px;
-  padding: 16px;
   width: 250px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   text-align: center;
 }
 
 .swiper-slide img {
-  width: 100%;
+  width: 90%;
   height: auto;
   object-fit: contain;
 }
@@ -1087,25 +1087,3 @@ a:hover {
   font-size: 16px;
 }
 
-.badge-trending {
-  background: #f1fdf7;
-  color: #00c080;
-  display: inline-block;
-  font-size: 12px;
-  padding: 2px 8px;
-  border-radius: 12px;
-  margin: 6px 0;
-}
-
-.product-price {
-  color: #1a1a1a;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.heart-icon {
-  color: #ccc;
-  font-size: 20px;
-  cursor: pointer;
-  margin-top: 8px;
-}
