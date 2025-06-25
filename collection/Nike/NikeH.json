@@ -92,6 +92,104 @@
         }
          
       ]
+    },{
+      "name": "Nike Air Jordan 1 Low Panda",
+      "image_url": "imagesOrder/SNEAKER/Jordan L/Nike Panda.png",
+      "rating": 5,
+      "price": 130,
+      "detail": "รองเท้าบาสรุ่นยอดนิยม สีสันคลาสสิก ใส่ได้ทุกโอกาส",
+      "sizes": ["8US","8.5US","9US","9.5","10US"],
+      "colors": [
+        {
+          "color": "Panda",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan L/Nike Panda.png",
+            "imagesOrder/SNEAKER/Jordan L/Nike Panda Front.png"
+          ]
+        },
+        {
+          "color": "Quai",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan L/Jordan L Quai.png",
+            "imagesOrder/SNEAKER/Jordan L/Jordan L Front.png"
+          ]
+        },
+        {
+          "color": "UNC",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan L/Jordan L UNC.png",
+            "imagesOrder/SNEAKER/Jordan L/Jordan L UNC Front.png",
+            "imagesOrder/SNEAKER/Jordan L/Jordan L UNC Behind.png"
+          ]
+        }
+         
+      ]
+    },
+    {
+      "name": "Nike Air Jordan 1 Low Quai",
+      "image_url": "imagesOrder/SNEAKER/Jordan L/Jordan L Quai.png",
+      "rating": 5,
+      "price": 130,
+      "detail": "รองเท้าบาสรุ่นยอดนิยม สีสันคลาสสิก ใส่ได้ทุกโอกาส",
+      "sizes": ["8US","8.5US","9US","9.5","10US"],
+      "colors": [
+        {
+          "color": "Quai",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan L/Jordan L Quai.png",
+            "imagesOrder/SNEAKER/Jordan L/Jordan L Front.png"
+          ]
+        },
+        {
+          "color": "Panda",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan L/Nike Panda.png",
+            "imagesOrder/SNEAKER/Jordan L/Nike Panda Front.png"
+          ]
+        },
+        {
+          "color": "UNC",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan L/Jordan L UNC.png",
+            "imagesOrder/SNEAKER/Jordan L/Jordan L UNC Front.png",
+            "imagesOrder/SNEAKER/Jordan L/Jordan L UNC Behind.png"
+          ]
+        }
+         
+      ]
+    },
+    {
+      "name": "Nike Air Jordan 1 Low UNC",
+      "image_url": "imagesOrder/SNEAKER/Jordan L/Jordan L UNC.png",
+      "rating": 5,
+      "price": 130,
+      "detail": "รองเท้าบาสรุ่นยอดนิยม สีสันคลาสสิก ใส่ได้ทุกโอกาส",
+      "sizes": ["8US","8.5US","9US","9.5","10US"],
+      "colors": [
+        {
+            "color": "UNC",
+            "images": [
+            "imagesOrder/SNEAKER/Jordan L/Jordan L UNC.png",
+            "imagesOrder/SNEAKER/Jordan L/Jordan L UNC Front.png",
+            "imagesOrder/SNEAKER/Jordan L/Jordan L UNC Behind.png"
+          ]
+        },
+        {
+          "color": "Panda",
+          "images": [
+            "imagesOrder/SNEAKER/Jordan L/Nike Panda.png",
+            "imagesOrder/SNEAKER/Jordan L/Nike Panda Front.png"
+          ]
+        },
+        {
+            "color": "Quai",
+            "images": [
+            "imagesOrder/SNEAKER/Jordan L/Jordan L Quai.png",
+            "imagesOrder/SNEAKER/Jordan L/Jordan L Front.png"
+          ]
+        }
+         
+      ]
     }
   ]
 }

@@ -31,6 +31,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
     media="screen">
   <link rel="icon" href="imagesOrder/LOGO/SANG_SOM.png">
+
+
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
@@ -85,17 +91,24 @@
     </div>
   </div>
 
+
   <div class="layout_padding gallery_section">
-    <div class="container">
-      <h2 class="new_text">Nike Mid</h2>
-      <div id="product-list-NikeH"></div>
+  <div class="container">
+    <h2 class="new_text">Nike</h2>
 
-      <h2 class="new_text">Nike Low</h2>
-      <div id="product-list-NikeL"></div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper" id="product-list-NikeH">
+        <!-- JS จะ generate slide เข้าไปในนี้ -->
+      </div>
 
-
-
+      <!-- ปุ่มเลื่อน -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
+  </div>
+</div>
+  
+
 
     <!-- MODAL POPUP -->
     <div class="modal fade" id="productModal" tabindex="-1" role="dialog">
@@ -200,7 +213,6 @@
   <script src="js/plugin.js"></script>
 
   <script src="collection/Nike/NikeH.js"></script>
-  <script src="collection/Nike/NikeL.js"></script>
 
   <!-- sidebar -->
   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -208,6 +220,46 @@
   <!-- javascript -->
   <script src="js/owl.carousel.js"></script>
   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+  <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  fetch('collection/Nike/NikeH.json')
+    .then(res => res.json())
+    .then(data => {
+      const container = document.getElementById('product-list-NikeH');
+      container.innerHTML = ''; // เคลียร์ของเก่า (เผื่อมี)
+
+      data.products.forEach((product, index) => {
+        container.innerHTML += `
+          <div class="swiper-slide">
+            <img src="${product.image_url}" alt="${product.name}">
+            <div class="product-name">${product.name}</div>
+            <div class="badge-trending">🔥 Trending</div>
+            <div class="product-price">฿ ${product.price.toLocaleString()}</div>
+            <div class="heart-icon">♡</div>
+          </div>
+        `;
+      });
+
+      new Swiper('.mySwiper', {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        },
+      });
+    });
+});
+</script>
 
   <script>
 
