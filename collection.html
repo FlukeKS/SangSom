@@ -110,7 +110,7 @@
       </div>
     </div>
   </div>
-  
+
   <!-- MODAL POPUP -->
       <div class="modal fade" id="productModal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
@@ -213,7 +213,6 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/jquery-3.0.0.min.js"></script>
   <script src="js/plugin.js"></script>
-
   <script src="collection/Nike/NikeH.js"></script>
 
   <!-- sidebar -->
@@ -223,35 +222,7 @@
   <script src="js/owl.carousel.js"></script>
   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      fetch('collection/Nike/NikeH.json')
-        .then(res => res.json())
-        .then(data => {
-      allProducts = data.products;
-
-      
-
-          new Swiper('.mySwiper', {
-            slidesPerView: 3,
-            spaceBetween: 20,
-            navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
-              640: { slidesPerView: 1 },
-              768: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
-            },
-          });
-        });
-    });
-
-  </script>
 
   <script>
 

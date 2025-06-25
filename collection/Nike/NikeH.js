@@ -1,6 +1,7 @@
+let allProducts = []; // ต้องอยู่นอก fetch!
+
 document.addEventListener('DOMContentLoaded', function () {
   const productContainer = document.getElementById('product-list-NikeH');
-  let allProducts = [];
 
   fetch('collection/Nike/NikeH.json')
     .then(res => res.json())
@@ -12,122 +13,52 @@ document.addEventListener('DOMContentLoaded', function () {
           <div class="swiper-slide">
             <div class="best_shoes" style="border: 1px solid #ddd; padding: 15px; margin-bottom: 20px;">
               <p class="best_text"><strong>${product.name}</strong></p>
-                <div class="shoes_icon">
-                  <img src="${product.image_url}" alt="${product.name}" class="img-responsive">
+              <div class="shoes_icon">
+                <img src="${product.image_url}" alt="${product.name}" class="img-responsive">
+              </div>
+              <div class="star_text">
+                <div class="left_part">
+                  <ul style="list-style: none; padding-left: 0;">
+                    ${'<li style="display:inline;"><img src="images/star-icon.png" alt="star"></li>'.repeat(product.rating)}
+                  </ul>
                 </div>
-                <div class="star_text">
-                  <div class="left_part">
-                    <ul style="list-style: none; padding-left: 0;">
-                      ${'<li style="display:inline;"><img src="images/star-icon.png" alt="star"></li>'.repeat(product.rating)}
-                    </ul>
-                  </div>
-                  <div class="right_part">
-                    <div class="shoes_price">Price: $<span style="color: #ff4e5b;">${product.price}</span></div>
-                  </div>
-                </div>
-                <div class="text-center" style="margin-top: 10px;">
-                  <button class="btn" style="background-color: green; color: white;" onclick="showProductDetail(${index})">View Detail</button>
-  
+                <div class="right_part">
+                  <div class="shoes_price">Price: $<span style="color: #ff4e5b;">${product.price}</span></div>
                 </div>
               </div>
-            </div>
-        `;
-        productContainer.innerHTML += productCardHTML;
-      });
-    });
-
-    
-
-  window.showProductDetail = function(index) {
-        const product = allProducts[index];
-        const modalBody = document.getElementById('modal-content');
-      
-        // สร้าง dropdown สี
-        let colorOptions = '';
-        product.colors.forEach((c, i) => {
-          colorOptions += `<option value="${i}">${c.color}</option>`;
-        });
-      
-        // สร้าง dropdown ไซส์
-        let sizeOptions = '';
-        (product.sizes || ["8US", "9US", "10US"]).forEach(size => {
-          sizeOptions += `<option value="${size}">${size}</option>`;
-        });
-      
-        const selectedColor = product.colors[0];
-        const galleryHTML = generateThumbnailGallery(selectedColor.images);
-
-     modalBody.innerHTML = `
-          <div class="row">
-            <div class="col-sm-6 image-gallery">
-              ${galleryHTML}
-            </div>
-            <div class="col-sm-6">
-              <h3>${product.name}</h3>
-              <p><strong>Price:</strong> $${product.price}</p>
-              <div class="form-group">
-                <label>Color:</label>
-                <select class="form-control" id="color-select">
-                  ${colorOptions}
-                </select>
+              <div class="text-center" style="margin-top: 10px;">
+                <button class="btn view-detail-btn" data-index="${index}" style="background-color: green; color: white;">View Detail</button>
               </div>
-              <div class="form-group">
-                <label>Size:</label>
-                <select class="form-control" id="size-select">
-                  ${sizeOptions}
-                </select>
-              </div>
-              <button class="btn btn-success mt-2" onclick="addToCart(${index})">Add to cart</button>
             </div>
           </div>
         `;
+        productContainer.innerHTML += productCardHTML;
+      });
 
-    setTimeout(() => {
-          document.getElementById('color-select').addEventListener('change', (e) => {
-            const colorIndex = parseInt(e.target.value);
-            const newImages = product.colors[colorIndex].images;
-            const newGalleryHTML = generateThumbnailGallery(newImages);
-            document.querySelector('.image-gallery').innerHTML = newGalleryHTML;
-          });
-        }, 0);
-      
-        $('#productModal').modal('show');
-      };
+      // ❗ ต้อง init Swiper หลังจากเพิ่ม slide เข้า DOM แล้ว
+      new Swiper('.mySwiper', {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        },
+        // ป้องกันการรบกวน click ปุ่ม
+        touchStartPreventDefault: false,
+      });
 
-  window.addToCart = function(index) {
-        const product = allProducts[index];
-      
-        const selectedColorIndex = document.getElementById('color-select')?.value;
-        const selectedSize = document.getElementById('size-select')?.value;
-      
-        // ตรวจสอบว่าผู้ใช้เลือก color และ size แล้ว
-        if (selectedColorIndex === null || selectedColorIndex === '' || selectedSize === null || selectedSize === '') {
-          alert("Select color or size");
-          return;
-        }
-
-    const selectedColor = product.colors[selectedColorIndex];
-      
-        // สร้าง item พร้อมสี + ไซส์
-        const cartItem = {
-          name: product.name,
-          price: product.price,
-          color: selectedColor.color,
-          size: selectedSize,
-          image_url: selectedColor.images[0] // เอาภาพแรกของสีที่เลือก
-        };
-      
-        let cart = JSON.parse(localStorage.getItem('cart')) || [];
-        cart.push(cartItem);
-        localStorage.setItem('cart', JSON.stringify(cart));
-      
-        alert("Add to cart Successful!");
-        $('#productModal').modal('hide');
-      };
-
-
-
-
-
-
-})
+      // ✅ แก้ปัญหาปุ่ม View Detail กดไม่ติด + Swiper เลื่อนเอง
+      document.querySelectorAll('.view-detail-btn').forEach(btn => {
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation(); // สำคัญมาก
+          const index = this.getAttribute('data-index');
+          showProductDetail(index);
+        });
+      });
+    });
+});
